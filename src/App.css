@@ -1,38 +1,375 @@
-.App {
-  text-align: center;
+:root {
+  --primary: #090E49;
+  --secondary: #ffff;
+  --yellow: #FFE827;
+  --gray: #5F6289;
+  font-family: 'Bungee', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  color: var(--primary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Roadmap */
+.roadmap{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: -50px;
+  margin-top: 15%;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* Texts */
+.text-gray {
+  color: var(--gray);
+}
+
+.text-white {
+  color: var(--secondary);
+}
+
+p {
+  font-size: 16px;
+}
+
+
+
+/* Buttons */
+.connectWalletButton {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.connectWalletButton>button {
+  background-image: linear-gradient(var(--yellow), #FF9913);
+  padding: 10px 30px;
+  box-shadow: -5px 5px var(--primary);
+  outline: none;
+  font-family: 'Bungee', cursive;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: 0.15s;
+  cursor: pointer;
+  z-index: 5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.connectWalletButton>button:hover {
+  color: var(--secondary);
+}
+
+.connectWalletButton>p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.App {
+  background-image: url(../public/assets/bg-mint.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Wallet Container */
+.wallet {
+  position: relative;
+  min-height: 60vh;
+  padding-bottom: 80px;
+  margin-top: 10vh;
+  margin-bottom: 30px;
+  width: 65%;
+  background-color: #fff;
+  border-radius: 34px;
+  box-shadow: -10px 10px var(--primary);
+  background-image: url(../public/assets/bg-wallet.png);
+  background-size: cover;
+  border: 2px solid var(--primary);
+  background-position: center;
+}
+
+.containerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerTitle>h1 {
+  font-weight: 800;
+  font-family: 'Bungee', cursive;
+  font-size: 44px;
+}
+
+.containerTitle>p {
+  margin-top: 10px;
+}
+
+
+
+/* logo */
+.logo {
+  margin-top: -60px;
+  margin-left: 50px;
+}
+
+
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+
+.socialIcons>a>div {
+  height: 30px;
+  width: 30px;
+  margin-right: 12px;
+  transition: 0.15s;
+}
+
+/* Twitter Icon */
+.twitter {
+  background: transparent url(../public/assets/twitter.png) no-repeat;
+}
+
+.twitter:hover {
+  background: transparent url(../public/assets/twitter_yellow.png) no-repeat;
+}
+
+/* Instagram Icon */
+.instagram {
+  background: transparent url(../public/assets/instagram.png) no-repeat;
+}
+
+.instagram:hover {
+  background: transparent url(../public/assets/instagram_yellow.png) no-repeat;
+}
+
+/* Discord Icon */
+.discord {
+  background: transparent url(../public/assets/discord.png) no-repeat;
+}
+
+.discord:hover {
+  background: transparent url(../public/assets/discord_yellow.png) no-repeat;
+}
+
+/* Opensea */
+.opensea {
+  background: transparent url(../public/assets/opensea.png) no-repeat;
+}
+
+.opensea:hover {
+  background: transparent url(../public/assets/opensea_yellow.png) no-repeat;
+}
+
+
+
+/* Bottom Images */
+.nftImages {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.img3 {
+  display: none;
+}
+
+
+
+
+/* Wallet Details */
+.walletDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.walletAddress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.walletAddress>div {
+  display: flex;
+  align-items: center;
+}
+
+.walletAddress>div>img {
+  margin: 0px 5px;
+}
+
+.walletBalance {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.walletBalance>div {
+  display: flex;
+  align-items: center;
+}
+
+.walletBalance>div>img {
+  margin: 0px 5px;
+}
+
+.disconnect {
+  cursor: pointer;
+  font-weight: 800;
+  z-index: 5;
+}
+
+.walletBalance>p {
+  font-weight: 800;
+}
+
+/* Copyright */
+.copyright {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+/* Counter */
+.counter {
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter>div {
+  z-index: 5;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter>div>h1 {
+  margin: 0px 20px;
+  font-size: 40px;
+}
+
+.counter>div>img {
+  cursor: pointer;
+}
+
+
+/* Total Price */
+.totalPrice {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+}
+
+.totalPrice>div>div {
+  display: flex;
+  font-size: 25px;
+  font-weight: 800;
+  align-items: center;
+}
+
+@media screen and (max-width:900px) {
+  .App {
+    justify-content: start;
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* logo */
+  .logo {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin: 0;
+    margin-top: -40px;
+  }
+
+  .connectWalletButton>button {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  .connectWalletButton>p {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .wallet {
+    width: 80vw;
+    min-height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    position:unset;
+  }
+  .roadmap{
+    display: none;
+  }
+  .roadmapBottom{
+    position: fixed;
+    margin-top: 100%;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    z-index: 50;
+  }
+
+  .nftImages>.img1 {
+    display: none;
+  }
+
+  .nftImages>.img2 {
+    display: none;
+  }
+
+  .nftImages {
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .nftImages>.img3 {
+    display: block;
+    width: 100vw;
+  }
+
+  /* Social Icons */
+  .socialIcons {
+    margin-top: 30px;
+    justify-content: center;
+    padding: 0;
   }
 }
