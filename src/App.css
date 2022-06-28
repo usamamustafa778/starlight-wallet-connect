@@ -20,6 +20,9 @@
   margin-top: 15%;
   cursor: pointer;
 }
+.roadmapBottom{
+  display: none;
+}
 
 
 /* Texts */
@@ -88,7 +91,7 @@ p {
 /* Wallet Container */
 .wallet {
   position: relative;
-  min-height: 60vh;
+  height: 85vh;
   padding-bottom: 80px;
   margin-top: 10vh;
   margin-bottom: 30px;
@@ -114,8 +117,9 @@ p {
   font-size: 44px;
 }
 
-.containerTitle>p {
-  margin-top: 10px;
+.containerTitle> h3 {
+  margin-top: -25px;
+  font-weight: 400;
 }
 
 
@@ -270,15 +274,14 @@ p {
 .counter>div {
   z-index: 5;
   width: 100%;
-  max-width: 300px;
+  max-width:250px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .counter>div>h1 {
-  margin: 0px 20px;
-  font-size: 40px;
+  font-size: 54px;
 }
 
 .counter>div>img {
@@ -329,7 +332,7 @@ p {
 
   .wallet {
     width: 80vw;
-    min-height: auto;
+    height: auto;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 30px;
@@ -339,6 +342,7 @@ p {
     display: none;
   }
   .roadmapBottom{
+    display: block;
     position: fixed;
     margin-top: 100%;
     bottom: 0;

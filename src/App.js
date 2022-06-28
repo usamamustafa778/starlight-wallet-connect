@@ -29,7 +29,7 @@ export default function App() {
         {/* Title */}
         <div className="containerTitle text-blue">
           <h1>MINT LITES</h1>
-          <p>8,888 SXS Lites NFT</p>
+          <h3>8,888 SXS Lites NFT</h3>
         </div>
 
         <br />
@@ -85,7 +85,9 @@ export default function App() {
             </>
           ) : (
             <div className="connectWalletButton">
+              <br />
               <button onClick={() => setWallet(true)}>Connect Wallet</button>
+              <br />
               <p>
                 If you’re connecting from mobile, <br /> please use the built in
                 browser in MetaMask App
