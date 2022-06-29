@@ -91,7 +91,7 @@ p {
 
 
 /* Wallet Container */
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1450px) {
   .wallet {
     height: 660px;
   }
@@ -99,7 +99,6 @@ p {
 
 .wallet {
   position: relative;
-  height: auto;
   padding-bottom: 50px;
   margin-top: 10vh;
   margin-bottom: 30px;
@@ -256,8 +255,10 @@ p {
 
 .disconnect {
   cursor: pointer;
-  font-weight: 800;
   z-index: 5;
+}
+.disconnect > p{
+  font-weight: 800;
 }
 
 .walletBalance>p {
@@ -291,7 +292,8 @@ p {
 }
 
 .counter>div>h1 {
-  font-size: 54px;
+  font-size: 44px;
+  font-family: 'Bungee', cursive;
 }
 
 .counter>div>img {
