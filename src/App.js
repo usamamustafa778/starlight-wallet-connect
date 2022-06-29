@@ -77,6 +77,7 @@ export default function App() {
           ) : (
             <div className="connectWalletButton">
               <br />
+              <br />
               <button onClick={() => setWallet(true)}>Connect Wallet</button>
               <br />
               <p>

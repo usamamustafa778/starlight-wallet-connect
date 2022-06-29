@@ -72,7 +72,7 @@ p {
 
 .connectWalletButton>p {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 
@@ -93,14 +93,14 @@ p {
 /* Wallet Container */
 @media screen and (max-width:1450px) {
   .wallet {
-    height: 660px;
+    height: 600px;
   }
 }
 
 .wallet {
   position: relative;
-  padding-bottom: 50px;
   margin-top: 10vh;
+  padding-bottom: 50px;
   margin-bottom: 30px;
   width: 65%;
   background-color: #fff;
@@ -125,7 +125,7 @@ p {
 }
 
 .containerTitle>h3 {
-  margin-top: -5px;
+  margin-top: -25px;
   font-weight: 500;
 }
 
@@ -279,7 +279,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 
 .counter>div {
@@ -338,6 +338,9 @@ p {
 
   .containerTitle>h1 {
     font-size: 32px;
+  }
+  .containerTitle>h3{
+    margin: 0;
   }
 
   .connectWalletButton>button {
