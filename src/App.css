@@ -51,7 +51,7 @@ p {
 
 .connectWalletButton>button {
   background-image: linear-gradient(var(--yellow), #FF9913);
-  padding: 10px 30px;
+  padding: 5px 30px;
   box-shadow: -5px 5px var(--primary);
   outline: none;
   font-family: 'Bungee', cursive;
@@ -111,14 +111,14 @@ p {
   align-items: center;
 }
 
-.containerTitle>h1 {
+.containerTitle > h1 {
   font-weight: 800;
   font-family: 'Bungee', cursive;
   font-size: 44px;
 }
 
 .containerTitle> h3 {
-  margin-top: -25px;
+  margin-top: -5px;
   font-weight: 400;
 }
 
@@ -318,6 +318,10 @@ p {
     height: 80px;
     margin: 0;
     margin-top: -40px;
+  }
+
+  .containerTitle > h1{
+    font-size: 32px;
   }
 
   .connectWalletButton>button {
