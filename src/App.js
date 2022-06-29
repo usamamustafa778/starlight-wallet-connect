@@ -5,9 +5,6 @@ import SIcons from "./Components/SIcons";
 
 export default function App() {
   const [wallet, setWallet] = useState(false);
-  const handleClick = () => {
-    setWallet(true);
-  };
 
   return (
     <div className="App">
@@ -31,9 +28,6 @@ export default function App() {
           <h1>MINT LITES</h1>
           <h3>8,888 SXS Lites NFT</h3>
         </div>
-
-        <br />
-
         <div>
           {wallet ? (
             <>
@@ -60,11 +54,8 @@ export default function App() {
                 </div>
               </div>
 
-              <br />
-
               {/* Counter */}
               <Counter />
-              <br />
 
               <div className="totalPrice">
                 <h4>Total Price</h4>
@@ -73,12 +64,12 @@ export default function App() {
                     <img src="/assets/mdi_ethereum.png" alt="" />
                     0.05 ETH
                   </div>
-                  <p className="text-gray">+Gas Fee</p>
+                  <p className="text-gray gasFee">+Gas Fee</p>
                 </div>
               </div>
 
-            <br />
               {/* Connect Button */}
+              <br />
               <div className="connectWalletButton">
                 <button>mint your lites</button>
               </div>
@@ -96,7 +87,6 @@ export default function App() {
           )}
         </div>
       </div>
-      <br />
       {/* CopyRight */}
       <p className="copyright">© 2022 SXS. All Rights Reserved</p>
 
